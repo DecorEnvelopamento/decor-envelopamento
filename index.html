@@ -97,6 +97,53 @@
     p.address-info a:hover {
       text-decoration: underline;
     }
+
+    /* Responsivo para mobile */
+    @media (max-width: 768px) {
+      .overlay {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .left-section,
+      .right-section {
+        width: 100%;
+        padding: 0;
+      }
+
+      .logo {
+        max-width: 200px;
+        margin-bottom: 20px;
+      }
+
+      .right-section {
+        padding-left: 0;
+      }
+
+      .title-section h1 {
+        font-size: 1.4rem;
+        white-space: normal;
+      }
+
+      .title-section p {
+        font-size: 1rem;
+      }
+
+      .button {
+        font-size: 1rem;
+        padding: 12px;
+        max-width: 100%;
+      }
+
+      p.address-info {
+        font-size: 0.85rem;
+      }
+
+      .rating {
+        font-size: 0.7rem;
+      }
+    }
   </style>
 </head>
 <body>
