@@ -2,26 +2,41 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Envelopamento em Curitiba | Decor Envelopamento CWB</title>
+  <meta name="description" content="Decor Envelopamento em Curitiba: envelopamento de móveis, eletrodomésticos e carros com cores e texturas exclusivas. Atendimento rápido via WhatsApp com delivery em toda Curitiba." />
+
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17109723758"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    gtag('config', 'AW-17109723758');
+    gtag('config', 'AW-XXXXXXXXXX');
   </script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Envelopamento em Curitiba | Decor Envelopamento CWB</title>
-  <meta name="description" content="Decor Envelopamento em Curitiba: envelopamento de móveis, eletrodomésticos e carros com cores e texturas exclusivas. Atendimento rápido via WhatsApp com delivery em toda Curitiba." />
+  <!-- Evento de conversão Google Ads no botão -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-XXXXXXXXXX/XXXXXXXXXXX',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background-image: url('https://files.oaiusercontent.com/file-JDgfCwD54VVySSDpShQZqc?se=2025-06-03T01%3A50%3A00Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6b9e416b-96ae-497e-a793-2db3c370e204&sktid=62c1c80d-68c3-45f3-a7d6-dfd0703e6ae6&skt=2024-06-01T20%3A08%3A43Z&ske=2025-06-02T20%3A08%3A43Z&sks=b&skv=2021-08-06&sig=INzLg%2BrVNQZnBhFkOVB4e02qigT1iWfAp8r0dk23JFA%3D');
+      background-image: url('https://www.prodetailaz.com/wp-content/uploads/2022/12/vinyl-wrap-service-phoenix.jpg');
       background-size: cover;
       background-position: center;
       color: #fff;
@@ -108,6 +123,22 @@
     p.address-info a:hover {
       text-decoration: underline;
     }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+    .whatsapp-float a {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      font-size: 16px;
+    }
 
     /* Responsivo para mobile */
     @media (max-width: 768px) {
@@ -116,41 +147,33 @@
         padding: 20px;
         text-align: center;
       }
-
       .left-section,
       .right-section {
         width: 100%;
         padding: 0;
       }
-
       .logo {
         max-width: 200px;
         margin-bottom: 20px;
       }
-
       .right-section {
         padding-left: 0;
       }
-
       .title-section h1 {
         font-size: 1.4rem;
         white-space: normal;
       }
-
       .title-section p {
         font-size: 1rem;
       }
-
       .button {
         font-size: 1rem;
         padding: 12px;
         max-width: 100%;
       }
-
       p.address-info {
         font-size: 0.85rem;
       }
-
       .rating {
         font-size: 0.7rem;
       }
@@ -165,12 +188,10 @@
     <div class="right-section">
       <div class="title-section">
         <h1 itemprop="name">Decor Envelopamento CWB - Envelopamento em Curitiba</h1>
-        <p itemprop="description">
-          Transformamos seus móveis, eletrodomésticos, interiores e carros com diversas cores e texturas. Atendimento rápido e profissional com delivery em toda Curitiba.
-        </p>
+        <p itemprop="description">Transformamos seus móveis, eletrodomésticos, interiores e carros com diversas cores e texturas. Atendimento rápido e profissional com delivery em toda Curitiba.</p>
       </div>
 
-      <a href="https://wa.me/5541996677587" id="orcamento" class="button" target="_blank" itemprop="telephone" aria-label="Solicitar orçamento pelo WhatsApp">
+      <a href="https://wa.me/5541996677587" onclick="return gtag_report_conversion('https://wa.me/5541996677587');" class="button" target="_blank" itemprop="telephone" aria-label="Solicitar orçamento pelo WhatsApp">
         📝 Solicitar Orçamento via WhatsApp
       </a>
 
@@ -193,19 +214,17 @@
         📞 Telefone/WhatsApp: <a href="tel:+5541996677587">(41) 99667-7587</a>
       </p>
 
-      <div class="rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating" style="margin-top:30px;">
+      <div class="rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
         ⭐⭐⭐⭐⭐ <span itemprop="ratingValue">5.0</span> - Somos 5 estrelas no Google com <span itemprop="reviewCount">120</span> avaliações
       </div>
     </div>
   </div>
 
-  <!-- RASTREAMENTO DE CONVERSÃO -->
-  <script>
-    document.getElementById('orcamento').addEventListener('click', function () {
-      gtag('event', 'conversion', {
-        'send_to': 'AW-17109723758/Cn6vCLzdt8gZEKKAyfMq'
-      });
-    });
-  </script>
+  <!-- Botão flutuante WhatsApp com rastreamento -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/5541996677587" onclick="return gtag_report_conversion('https://wa.me/5541996677587');" target="_blank">
+      💬 Orçamento Rápido
+    </a>
+  </div>
 </body>
 </html>
