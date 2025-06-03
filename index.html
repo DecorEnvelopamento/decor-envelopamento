@@ -21,7 +21,7 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background-image: url('https://www.prodetailaz.com/wp-content/uploads/2022/12/vinyl-wrap-service-phoenix.jpg');
+      background-image: url('https://files.oaiusercontent.com/file-JDgfCwD54VVySSDpShQZqc?se=2025-06-03T01%3A50%3A00Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6b9e416b-96ae-497e-a793-2db3c370e204&sktid=62c1c80d-68c3-45f3-a7d6-dfd0703e6ae6&skt=2024-06-01T20%3A08%3A43Z&ske=2025-06-02T20%3A08%3A43Z&sks=b&skv=2021-08-06&sig=INzLg%2BrVNQZnBhFkOVB4e02qigT1iWfAp8r0dk23JFA%3D');
       background-size: cover;
       background-position: center;
       color: #fff;
@@ -170,7 +170,7 @@
         </p>
       </div>
 
-      <a href="https://wa.me/5541996677587" class="button" target="_blank" itemprop="telephone" aria-label="Solicitar orçamento pelo WhatsApp">
+      <a href="https://wa.me/5541996677587" id="orcamento" class="button" target="_blank" itemprop="telephone" aria-label="Solicitar orçamento pelo WhatsApp">
         📝 Solicitar Orçamento via WhatsApp
       </a>
 
@@ -198,5 +198,14 @@
       </div>
     </div>
   </div>
+
+  <!-- RASTREAMENTO DE CONVERSÃO -->
+  <script>
+    document.getElementById('orcamento').addEventListener('click', function () {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17109723758/Cn6vCLzdt8gZEKKAyfMq'
+      });
+    });
+  </script>
 </body>
 </html>
