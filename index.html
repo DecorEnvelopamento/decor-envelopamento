@@ -20,7 +20,7 @@
     function gtag_report_conversion(url) {
       var callback = function () {
         if (typeof(url) != 'undefined') {
-          window.location = url;
+          window.open(url, "_blank");
         }
       };
       gtag('event', 'conversion', {
@@ -36,7 +36,7 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: url('https://www.prodetailaz.com/wp-content/uploads/2022/12/vinyl-wrap-service-phoenix.jpg') no-repeat center center fixed;
+      background: url('./images/background.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
     }
@@ -203,7 +203,7 @@
         📍 <span itemprop="streetAddress">R. Ébano Pereira - Centro</span><br/>
         <span itemprop="addressLocality">Curitiba</span> - <span itemprop="addressRegion">PR</span>, <span itemprop="postalCode">80410-240</span><br />
         ⏰ Atendimento: Seg a Sex 9h - 18h | Sáb 9h - 13h<br />
-        📞 Telefone/WhatsApp: <a href="tel:+5541996677587">(41) 99667-7587</a>
+        📞 Telefone/WhatsApp: <a href="https://wa.me/5541996677587" target="_blank" onclick="gtag_report_conversion('https://wa.me/5541996677587')">(41) 99667-7587</a>
       </p>
       <div class="rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
         ⭐⭐⭐⭐⭐ <span itemprop="ratingValue">5.0</span> - Somos 5 estrelas no Google com <span itemprop="reviewCount">120</span> avaliações
