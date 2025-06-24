@@ -50,6 +50,29 @@
       padding: 40px;
       box-sizing: border-box;
     }
+
+    #catalogo {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+    }
+
+    #catalogo div {
+      background:#111;
+      padding:20px;
+      border-radius:10px;
+      max-width:260px;
+      text-align:center;
+    }
+    
+    #catalogo img {
+      width: 250px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      height: 300px;
+    }
+
     .left-section {
       flex: 1;
       display: flex;
@@ -85,6 +108,7 @@
       margin-bottom: 30px;
       color: #ccc;
     }
+    
     .button {
       display: block;
       width: 100%;
@@ -138,6 +162,12 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
       font-size: 18px;
     }
+
+    #btns-catalogo {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
     @media (max-width: 768px) {
       .overlay {
         flex-direction: column;
@@ -173,6 +203,12 @@
       }
       .rating {
         font-size: 0.7rem;
+      }
+
+      #btns-catalogo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     }
   </style>
@@ -210,6 +246,41 @@
       </div>
     </div>
   </div>
+  <section style="background-color:#000;padding:40px 20px;color:#fff;text-align:center;">
+    <p style="max-width:700px;margin:0 auto 30px;font-size:1.1rem;line-height:1.6;color:#ccc;">
+      Trabalhamos com diversos tipos de papéis e acabamentos de alta qualidade.<br>
+      Veja o que podemos transformar para você
+    </p>
+    <div>
+      <div id="catalogo">
+        <div>
+          <img src="./images/catalogo/azul-urbano.png" alt="Armário Envelopado">
+          <h3 style="font-size:1.1rem;margin:10px 0;">Armários</h3>
+        </div>
+        <div>
+          <img src="./images/catalogo/verde-primavera.png" alt="Guarda Roupa Envelopada">
+          <h3 style="font-size:1.1rem;margin:10px 0;">Guarda Roupas</h3>
+        </div>
+        <div>
+          <img src="./images/catalogo/especial-courado.png" alt="Mesa Envelopada">
+          <h3 style="font-size:1.1rem;margin:10px 0;">Mesas</h3>
+        </div>
+        <div>
+          <img src="./images/catalogo/jardim-vertical.png" alt="Parede Envelopada">
+          <h3 style="font-size:1.1rem;margin:10px 0;">Paredes</h3>
+        </div>
+      </div>
+      <h3>Verifique nossos catálogos</h3>
+      <div id="btns-catalogo">
+        <a href="./images/catalogo/catalogo_1.pdf" class="button" target="_blank">
+          Catálogo 1
+        </a>
+        <a href="./images/catalogo/catalogo_2.pdf "class="button" target="_blank">
+          Catálogo 2
+        </a>
+      </div>
+    </div>
+  </section>
   <section style="background-color:#111;padding:40px 20px;color:#fff;text-align:center;">
     <h2 style="font-size:1.8rem;margin-bottom:20px;">O que dizem nossos clientes</h2>
     <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
