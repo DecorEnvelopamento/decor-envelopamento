@@ -1,0 +1,2 @@
+Coloque aqui as fotos dos projetos com os nomes 1.jpg, 2.jpg, 3.jpg ... ate 9.jpg.
+Elas aparecem sozinhas na pagina /wrap/ (formato em pe, 4:5, fica melhor).
