@@ -156,6 +156,24 @@
     .wa-float{position:fixed;right:18px;bottom:18px;z-index:20;width:58px;height:58px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(37,211,102,.35)}
     .wa-float svg{width:30px;height:30px;fill:#fff}
     @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+  
+    /* ===== fotos (nov/2026) ===== */
+    .hero{background:linear-gradient(90deg,rgba(11,11,12,.95) 0%,rgba(11,11,12,.82) 48%,rgba(11,11,12,.45) 100%),url("/wrap/WhatsApp%20Image%202026-11-22%20at%2013.30.45%203.jpeg") center 30%/cover no-repeat}
+    @media (max-width:720px){.hero{background:linear-gradient(180deg,rgba(11,11,12,.72),rgba(11,11,12,.95)),url("/wrap/WhatsApp%20Image%202026-11-22%20at%2013.30.45%203.jpeg") center 25%/cover no-repeat}}
+    .ft{margin:0;position:relative;overflow:hidden;border-radius:14px;border:1px solid var(--linha);background:var(--card)}
+    .ft img{display:block;width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .6s ease}
+    .ft:hover img{transform:scale(1.04)}
+    .ft figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 12px;font-size:.85rem;color:var(--txt);background:linear-gradient(transparent,rgba(0,0,0,.85))}
+    .ft figcaption small{display:block;color:var(--txt2);font-size:.72rem;margin-top:2px}
+    .fotos-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+    .fotos-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
+    .projeto-destaque{margin-top:34px;padding:22px;border:1px solid var(--linha);border-radius:18px;background:var(--bg2)}
+    .projeto-destaque h3{font-size:1.25rem;margin:0 0 6px}
+    .projeto-destaque p{color:var(--txt2);margin:0;max-width:720px}
+    .etapa{position:absolute;top:12px;left:12px;font-size:.68rem;letter-spacing:.18em;padding:5px 10px;border-radius:999px;background:rgba(0,0,0,.65);border:1px solid var(--linha);color:var(--metal)}
+    .espaco-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:14px;margin-top:34px}
+    .espaco-grid .ft img{aspect-ratio:auto;min-height:420px}
+    @media (max-width:860px){.fotos-3,.fotos-4{grid-template-columns:repeat(2,1fr)}.espaco-grid{grid-template-columns:1fr}.espaco-grid .ft img{min-height:300px;aspect-ratio:4/5}}
   </style>
 </head>
 <body>
@@ -167,6 +185,7 @@
       </a>
       <nav>
         <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
         <a href="#processo">Como funciona</a>
         <a href="#local">Onde estamos</a>
         <a class="btn-mini" href="https://wa.me/5541997853973?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20apresentar%20meu%20projeto." target="_blank" rel="noopener" onclick="return gtag_report_conversion()">WhatsApp</a>
@@ -211,31 +230,51 @@
           <div class="card"><div class="n">05</div><h3>Detailing automotivo</h3><p>Lavagem detalhada, descontaminação e higienização interna antes e depois de cada projeto.</p></div>
           <div class="card"><div class="n">06</div><h3>Polimento técnico e vitrificação</h3><p>Correção de pintura e vitrificação para brilho profundo e proteção duradoura.</p></div>
         </div>
+      <div class="fotos-3">
+          <figure class="ft"><img src="/wrap/photo-1708805282695-ef186db20192.avif" alt="Polimento técnico com politriz em pintura preta" loading="lazy" decoding="async"><figcaption>Polimento técnico<small>Correção de pintura e brilho profundo</small></figcaption></figure>
+          <figure class="ft"><img src="/wrap/1795366635860_WhatsApp%20Image%202026-11-22%20at%2013.56.35%201.jpeg" alt="Volkswagen Virtus preto recebendo PPF no box da Decor Wrap Concept em Curitiba" loading="lazy" decoding="async"><figcaption>PPF no box interno<small>Proteção de pintura em andamento</small></figcaption></figure>
+          <figure class="ft"><img src="/wrap/photo-1652898072202-5084dc85b850.avif" alt="Detailing automotivo com aplicação de produto no farol" loading="lazy" decoding="async"><figcaption>Detailing automotivo<small>Lavagem detalhada, descontaminação e acabamento</small></figcaption></figure>
+        </div>
       </div>
     </section>
 
-    <section id="projetos" class="projetos-sec" hidden>
+    <section id="projetos" class="projetos-sec">
       <div class="wrap">
         <div class="eyebrow">PROJETOS</div>
-        <h2>Alguns projetos entregues</h2>
-        <p class="lead">Mais projetos no nosso Instagram, <a href="https://www.instagram.com/decorwrapconcept/" target="_blank" rel="noopener">@decorwrapconcept</a>.</p>
-        <div class="galeria" id="galeria"></div>
+        <h2>Alguns projetos da Decor Wrap Concept</h2>
+        <p class="lead">Troca de cor, adesivado personalizado e proteção de pintura feitos no nosso box. Mais projetos no Instagram <a href="https://www.instagram.com/decorwrapconcept/" target="_blank" rel="noopener">@decorwrapconcept</a>.</p>
+        <div class="projeto-destaque">
+          <h3>Mitsubishi Lancer: de vermelho para azul</h3>
+          <p>Troca de cor completa com vinil Alltak: da escolha do tom no catálogo até os detalhes do cofre do motor na mesma cor.</p>
+          <div class="fotos-4">
+            <figure class="ft"><span class="etapa">ANTES</span><img src="/wrap/WhatsApp%20Image%202024-05-22%20at%2010.50.02%201.jpeg" alt="Mitsubishi Lancer vermelho antes da troca de cor" loading="lazy" decoding="async"><figcaption>Pintura original vermelha</figcaption></figure>
+            <figure class="ft"><span class="etapa">A COR</span><img src="/wrap/WhatsApp%20Image%202024-05-22%20at%2010.51.48.jpeg" alt="Escolha da cor no catálogo de vinil Alltak em frente ao Lancer vermelho" loading="lazy" decoding="async" style="object-position:center 88%"><figcaption>Escolha no catálogo Alltak</figcaption></figure>
+            <figure class="ft"><span class="etapa">DEPOIS</span><img src="/wrap/WhatsApp%20Image%202024-05-22%20at%2011.08.10%201.jpeg" alt="Mitsubishi Lancer envelopado em azul brilhante, detalhe da frente" loading="lazy" decoding="async"><figcaption>Azul brilhante, acabamento de pintura</figcaption></figure>
+            <figure class="ft"><span class="etapa">DETALHE</span><img src="/wrap/WhatsApp%20Image%202024-05-22%20at%2011.08.10.jpeg" alt="Tampa do motor MIVEC com detalhes envelopados em azul" loading="lazy" decoding="async"><figcaption>Detalhes do motor na cor do projeto</figcaption></figure>
+          </div>
+        </div>
+        <div class="fotos-4">
+          <figure class="ft"><img src="/wrap/1795366635861_WhatsApp%20Image%202026-11-22%20at%2013.56.36.jpeg" alt="Mitsubishi Lancer branco com adesivado personalizado preto e vermelho" loading="lazy" decoding="async"><figcaption>Adesivado personalizado<small>Foto: Lou Phts</small></figcaption></figure>
+          <figure class="ft"><img src="/wrap/WhatsApp%20Image%202024-05-22%20at%2011.14.21.jpeg" alt="Renault Clio amarelo com faixas pretas em vinil" loading="lazy" decoding="async"><figcaption>Faixas em vinil<small>Projeto de pintura em adesivo</small></figcaption></figure>
+          <figure class="ft"><img src="/wrap/1795366635861_WhatsApp%20Image%202026-11-22%20at%2013.56.35.jpeg" alt="BMW Série 3 Touring azul em processo de envelopamento no box" loading="lazy" decoding="async"><figcaption>BMW em execução<small>Desmontagem para acabamento limpo</small></figcaption></figure>
+          <figure class="ft"><img src="/wrap/1795366635861_WhatsApp%20Image%202026-11-22%20at%2013.56.35%202.jpeg" alt="Traseira de Volkswagen Virtus preto durante aplicação no box" loading="lazy" decoding="async"><figcaption>Virtus em execução<small>Acabamento nas bordas e emblemas</small></figcaption></figure>
+        </div>
       </div>
     </section>
-    <script>
-      // Fotos: coloque arquivos chamados 1.jpg, 2.jpg ... 9.jpg na pasta wrap/fotos/.
-      // As que existirem aparecem; a seção só aparece se houver pelo menos uma.
-      (function(){
-        var g=document.getElementById('galeria'),s=document.getElementById('projetos');
-        for(var i=1;i<=9;i++){(function(n){
-          var im=new Image();im.alt='Projeto Decor Wrap Concept '+n;im.loading='lazy';
-          im.onload=function(){s.hidden=false;g.appendChild(im);};
-          im.src='fotos/'+n+'.jpg';
-        })(i);}
-      })();
-    </script>
 
-    <section id="processo" class="processo">
+    <section id="espaco">
+      <div class="wrap">
+        <div class="eyebrow">O ESPAÇO</div>
+        <h2>Box interno dedicado e recepção para o seu projeto</h2>
+        <p class="lead">Seu carro fica em um box fechado, com iluminação técnica para enxergar cada detalhe do vinil e da pintura. Na recepção, você acompanha o projeto pelo vidro.</p>
+        <div class="espaco-grid">
+          <figure class="ft"><img src="/wrap/WhatsApp%20Image%202026-11-22%20at%2013.30.45%203.jpeg" alt="Box interno escuro da Decor Wrap Concept com iluminação técnica no teto e nas paredes" loading="lazy" decoding="async" style="object-position:center 40%"><figcaption>Box interno<small>Teto preto, luz linear e iluminação vertical para wrap, PPF e polimento</small></figcaption></figure>
+          <figure class="ft"><img src="/wrap/WhatsApp%20Image%202026-11-22%20at%2013.30.45%202.jpeg" alt="Recepção e showroom da Decor Wrap Concept com moto Suzuki Hayabusa e quadros automotivos" loading="lazy" decoding="async"><figcaption>Recepção e showroom<small>Atendimento com hora marcada no Parolin, Curitiba</small></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+<section id="processo" class="processo">
       <div class="wrap">
         <div class="eyebrow">COMO FUNCIONA</div>
         <h2>Do primeiro contato à entrega</h2>
