@@ -47,6 +47,21 @@
     }
   </script>
 
+  <!-- Google Ads conta 831-818-8205: conversoes separadas WhatsApp Decor e WhatsApp Wrap (pelo numero do link) -->
+  <script>
+    gtag('config', 'AW-18238935209');
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest ? e.target.closest('a[href]') : null;
+      if (!link || typeof gtag !== 'function') return;
+      var numeros = link.href.replace(/\D/g, '');
+      var sendTo = null;
+      if (/419?96677587/.test(numeros)) sendTo = 'AW-18238935209/FAjuCNOc178dEKmhgPlD'; // WhatsApp Decor
+      else if (/419?97853973/.test(numeros)) sendTo = 'AW-18238935209/awLLCNac178dEKmhgPlD'; // WhatsApp Wrap
+      if (!sendTo) return;
+      gtag('event', 'conversion', { 'send_to': sendTo, 'value': 1.0, 'currency': 'BRL', 'transport_type': 'beacon' });
+    }, true);
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
